@@ -48,6 +48,16 @@ export default function AboutMe() {
           <br /> */}
         </p>
 
+        <h3 className="text-lg">Skills</h3>
+        <p className="font-light leading-loose grid grid-cols-2">
+          <span>Frontend - React, Next.js and Remix</span>
+          <span>Typescript, Tailwind CSS</span>
+          <span>Backend - Node.js (Express, and Fastify)</span>
+          <span>Linux, Digital ocean</span>
+          <span>Database - MongoDB, Postgres w Prisma</span>
+          <span>Docker, K8s</span>
+        </p>
+
         <h3 className="text-lg">Apps I use</h3>
         <p className="font-light leading-loose grid grid-cols-2">
           <span>Visual Studio Code</span>
