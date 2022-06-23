@@ -18,21 +18,21 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <Link target="_blank" href={project.link || ''}>
-      <div>
+    <div>
+      <Link target="_blank" href={project.link || ''}>
         <img
           alt="Handmadelove"
-          className="w-full h-auto object-cover hover:scale-105 transition-all"
+          className="w-full h-auto object-cover hover:scale-105 transition-all cursor-pointer"
           src={project.cover}
         />
-        <h3 className="font-medium mt-4">{project.name}</h3>
-        <p className="text-gray-400 mt-2 text-sm font-light">{project.intro}</p>
-        <div className="mt-4 flex items-start flex-wrap gap-2">
-          {project.techs.map(tech => (
-            <Pill key={tech}>{tech}</Pill>
-          ))}
-        </div>
+      </Link>
+      <h3 className="font-medium mt-4">{project.name}</h3>
+      <p className="text-gray-400 mt-2 text-sm font-light">{project.intro}</p>
+      <div className="mt-4 flex items-start flex-wrap gap-2">
+        {project.techs.map(tech => (
+          <Pill key={tech}>{tech}</Pill>
+        ))}
       </div>
-    </Link>
+    </div>
   );
 }

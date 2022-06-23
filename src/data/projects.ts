@@ -52,14 +52,14 @@ const projects: Project[] = [
       'Styled components',
     ],
   },
-  {
-    id: '4',
-    name: 'SG Adhav',
-    intro: '',
-    link: 'https://sgadhav.in',
-    cover: '/sgadhav.png',
-    techs: ['React', 'Typescript'],
-  },
+  // {
+  //   id: '4',
+  //   name: 'SG Adhav',
+  //   intro: '',
+  //   link: 'https://sgadhav.in',
+  //   cover: '/sgadhav.png',
+  //   techs: ['React', 'Typescript'],
+  // },
   {
     id: '5',
     name: 'React Boilerplate',

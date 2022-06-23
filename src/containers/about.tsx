@@ -1,14 +1,14 @@
 export default function AboutMe() {
   return (
     <>
-      <div className="py-12 px-1 flex justify-center items-center max-w-screen-lg mx-auto">
-        <div className="text-center text-xl text-gray-600 leading-loose tracking-wide">
+      <div className="p-8 sm:p-12 px-1 flex justify-center items-center max-w-screen-lg mx-auto">
+        <div className="text-center text-base sm:text-xl text-gray-600 leading-normal sm:leading-loose tracking-wide">
           Yep, that&apos;s me. <br />
           Nice to meet you 🙂
         </div>
       </div>
 
-      <div className="grid grid-cols-[1fr_3fr] py-12 max-w-screen-lg mx-auto gap-x-12 gap-y-16">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] p-8 sm:p-12 max-w-screen-lg mx-auto gap-x-12 gap-y-10 sm:gap-y-16">
         <h3 className="text-lg">About</h3>
         <p className="font-light leading-relaxed">
           My name is Bruce. I&apos;m a full stack developer with a strong focus
@@ -49,12 +49,18 @@ export default function AboutMe() {
         </p>
 
         <h3 className="text-lg">Skills</h3>
-        <p className="font-light leading-loose grid grid-cols-2">
-          <span>Frontend - React, Next.js and Remix</span>
+        <p className="font-light leading-loose grid grid-cols-1 sm:grid-cols-2">
+          <span>
+            <strong>React</strong>, Next.js and Remix
+          </span>
           <span>Typescript, Tailwind CSS</span>
-          <span>Backend - Node.js (Express, and Fastify)</span>
+          <span>
+            Node.js (<strong>Express</strong>, and Fastify)
+          </span>
           <span>Linux, Digital ocean</span>
-          <span>Database - MongoDB, Postgres w Prisma</span>
+          <span>
+            <strong>MongoDB</strong>, Postgres w Prisma
+          </span>
           <span>Docker, K8s</span>
         </p>
 

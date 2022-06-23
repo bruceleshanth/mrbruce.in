@@ -11,11 +11,15 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className="text-lg py-12">
+    <header className="text-base sm:text-lg p-8 sm:p-12">
       <div className="max-w-screen-lg mx-auto flex items-center justify-between">
         <div>
           <Link href="/">
-            <a href="#" className="text-xl tracking-wide font-semibold">
+            <a
+              href="#"
+              className="text-3xl tracking-wide font-semibold"
+              style={{ fontFamily: 'Allison' }}
+            >
               Mr. Bruce
             </a>
           </Link>
