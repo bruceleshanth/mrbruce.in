@@ -15,5 +15,5 @@ export default function Footer() {
         <strong>bruceupwork@gmail.com</strong>
       </a>
     </footer>
-  );
+  )
 }

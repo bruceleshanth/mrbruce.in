@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Footer from '~/components/nav/footer';
-import Header from '~/components/nav/header';
-import AboutMe from '~/containers/about';
+import Head from 'next/head'
+import Footer from '~/components/nav/footer'
+import Header from '~/components/nav/header'
+import AboutMe from '~/containers/about'
 
 export default function About() {
   return (
@@ -16,5 +16,5 @@ export default function About() {
       <AboutMe />
       <Footer />
     </>
-  );
+  )
 }

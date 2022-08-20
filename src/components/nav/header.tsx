@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-import cn from 'classnames';
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import cn from 'classnames'
 
 const menus = [
   { menu: 'Work', path: '/' },
   { menu: 'About', path: '/about' },
-];
+]
 
 export default function Header() {
-  const router = useRouter();
+  const router = useRouter()
 
   return (
     <header className="text-base sm:text-lg p-8 sm:p-12">
@@ -39,5 +39,5 @@ export default function Header() {
         </ul>
       </div>
     </header>
-  );
+  )
 }

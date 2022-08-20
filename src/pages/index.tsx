@@ -1,7 +1,7 @@
-import Head from 'next/head';
-import Footer from '~/components/nav/footer';
-import Header from '~/components/nav/header';
-import Projects from '~/containers/projects';
+import Head from 'next/head'
+import Footer from '~/components/nav/footer'
+import Header from '~/components/nav/header'
+import Projects from '~/containers/projects'
 
 export default function Home() {
   return (
@@ -16,5 +16,5 @@ export default function Home() {
       <Projects />
       <Footer />
     </>
-  );
+  )
 }

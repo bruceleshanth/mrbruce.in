@@ -1,27 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 
-import Link from 'next/link';
-import Pill from './pill';
+import Link from 'next/link'
+import Pill from './pill'
 
 export type Project = {
-  id: string;
-  name: string;
-  intro: any;
-  cover: string;
-  link?: string;
-  techs: string[];
-};
+  id: string
+  name: string
+  intro: any
+  cover: string
+  link?: string
+  techs: string[]
+}
 
 type Props = {
-  project: Project;
-};
+  project: Project
+}
 
 export default function ProjectCard({ project }: Props) {
   return (
     <div>
       <Link target="_blank" href={project.link || ''}>
         <img
-          alt="Handmadelove"
+          alt={project.name}
           className="w-full h-auto object-cover hover:scale-105 transition-all cursor-pointer"
           src={project.cover}
         />
@@ -34,5 +34,5 @@ export default function ProjectCard({ project }: Props) {
         ))}
       </div>
     </div>
-  );
+  )
 }
