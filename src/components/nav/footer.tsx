@@ -7,8 +7,8 @@ export default function Footer() {
           <strong>Next.js</strong>
         </a>{' '}
         and hosted on{' '}
-        <a href="https://vercel.com" target="_blank" rel="noreferrer">
-          <strong>Vercel</strong>
+        <a href="https://fly.io" target="_blank" rel="noreferrer">
+          <strong>Fly</strong>
         </a>
       </p>
       <a href="mailto:bruceupwork@gmail.com">

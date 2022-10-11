@@ -26,17 +26,17 @@ export default function AboutMe() {
 
         <h3 className="text-lg">Work</h3>
         <p className="font-light leading-relaxed">
-          Freelance Developer @ Popstream
+          <strong>Senior Software Engineer Freelance</strong> @ Popstream
           <br />
           <span className="text-sm">Mar 2022 - Now</span>
           <br />
           <br />
-          Freelance Developer @ Handmadelove
+          <strong>MERN Developer Freelance</strong> @ Handmadelove
           <br />
           <span className="text-sm">Mar 2021 - Oct 2021</span>
           <br />
           <br />
-          Freelance Developer @ VisiblX
+          <strong>MERN Developer Freelance</strong> @ VisiblX
           <br />
           <span className="text-sm">Oct 2020 - Jan 2021</span>
           <br />

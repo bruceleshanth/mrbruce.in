@@ -15,6 +15,7 @@ const projects: Project[] = [
       'Linux',
       'MongoDB',
       'Firebase',
+      'Digital Ocean',
     ],
   },
   {
@@ -23,14 +24,16 @@ const projects: Project[] = [
     intro:
       'Popstream is a social media platform built with React Native + Typescript.  Its unique following system helps you reach more audiences easily.',
     cover: '/popstream.jpeg',
+    link: 'https://popstream.co',
     techs: [
       'React Native',
       'Typescript',
       'Firebase',
       'Node.js',
-      'Postgres',
-      'Prisma ORM',
-      'Linux',
+      'Postgresql',
+      'Serverless',
+      'Multi-region',
+      'Fly.io',
     ],
   },
   {

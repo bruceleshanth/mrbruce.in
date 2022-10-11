@@ -5,6 +5,11 @@ import cn from 'classnames'
 const menus = [
   { menu: 'Work', path: '/' },
   { menu: 'About', path: '/about' },
+  {
+    menu: 'Source',
+    path: 'https://github.com/bruceleshanth/mrbruce.in',
+    external: true,
+  },
 ]
 
 export default function Header() {
@@ -32,7 +37,7 @@ export default function Header() {
               className={cn({ 'text-gray-400': menu.path !== router.pathname })}
             >
               <Link href={menu.path}>
-                <a>{menu.menu}</a>
+                <a target={menu.external ? '_blank' : '_self'}>{menu.menu}</a>
               </Link>
             </li>
           ))}
