@@ -87,11 +87,11 @@ export default function AboutMe() {
 
         <h3 className="text-lg">Contact</h3>
         <p className="font-light leading-loose">
-          <a href="mailto:bruceupwork@gmail.com" target="_blank">
-            Email
-          </a>
+          <a href="mailto:bruceupwork@gmail.com">Email</a>
           <br />
-          <a href="https://github.com/bruceleshanth">Github</a>
+          <a href="https://github.com/bruceleshanth" target="_blank" rel="noreferrer">
+            Github
+          </a>
         </p>
       </div>
     </>

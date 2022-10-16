@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: Props) {
   return (
     <div>
       <Link href={project.link || ''}>
-        <a target="_blank">
+        <a target="_blank" rel="noreferrer">
           <img
             alt={project.name}
             className="w-full h-auto object-cover hover:scale-105 transition-all cursor-pointer"

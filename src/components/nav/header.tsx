@@ -32,12 +32,11 @@ export default function Header() {
 
         <ul className="flex justify-center items-center gap-8">
           {menus.map(menu => (
-            <li
-              key={menu.menu}
-              className={cn({ 'text-gray-400': menu.path !== router.pathname })}
-            >
+            <li key={menu.menu} className={cn({ 'text-gray-400': menu.path !== router.pathname })}>
               <Link href={menu.path}>
-                <a target={menu.external ? '_blank' : '_self'}>{menu.menu}</a>
+                <a target={menu.external ? '_blank' : '_self'} rel="noreferrer">
+                  {menu.menu}
+                </a>
               </Link>
             </li>
           ))}
