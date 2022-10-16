@@ -11,17 +11,17 @@ export default function AboutMe() {
       <div className="grid grid-cols-1 sm:grid-cols-[1fr_3fr] p-8 sm:p-12 max-w-screen-lg mx-auto gap-x-12 gap-y-10 sm:gap-y-16">
         <h3 className="text-lg">About</h3>
         <p className="font-light leading-relaxed">
-          My name is Bruce. I&apos;m a full stack developer with a strong focus
-          on usability and user experience.
+          My name is Bruce. I&apos;m a full stack developer with a strong focus on usability and
+          user experience.
           <br />
           <br />
-          My goal is to create usable and lovable products for people. I&apos;m
-          good at solving problems, developing scalable websites and creating
-          delightful experiences. I&apos;m obsessed with quality, I do believe
-          that the details are not the details, they make the product.
+          My goal is to create usable and lovable products for people. I&apos;m good at solving
+          problems, developing scalable websites and creating delightful experiences. I&apos;m
+          obsessed with quality, I do believe that the details are not the details, they make the
+          product.
           <br />
-          <br />I enjoy my free time refactoring existing code, learning new
-          frameworks and riding my bike.
+          <br />I enjoy my free time refactoring existing code, learning new frameworks and riding
+          my bike.
         </p>
 
         <h3 className="text-lg">Work</h3>
@@ -71,7 +71,7 @@ export default function AboutMe() {
           <span>Vim</span>
           <span>Git</span>
           <span>MongoDB Compass</span>
-          <span>iTerm 2</span>
+          <span>Hyper.is</span>
         </p>
 
         <h3 className="text-lg">Devices I use</h3>
@@ -87,7 +87,9 @@ export default function AboutMe() {
 
         <h3 className="text-lg">Contact</h3>
         <p className="font-light leading-loose">
-          <a href="mailto:bruceupwork@gmail.com">Email</a>
+          <a href="mailto:bruceupwork@gmail.com" target="_blank">
+            Email
+          </a>
           <br />
           <a href="https://github.com/bruceleshanth">Github</a>
         </p>
