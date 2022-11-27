@@ -33,7 +33,7 @@ jobs:
         uses: superfly/flyctl-actions/setup-flyctl@master
 
       - name: ⚙️ Setup Regions
-        run: fly regions set maa lax
+        run: flyctl regions set maa lax
 
       - name: 🚀 Deploy Production
         run: flyctl deploy --remote-only --detach --now --auto-confirm
