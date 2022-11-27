@@ -3,23 +3,6 @@ import { Project } from '~/components/project-card'
 const projects: Project[] = [
   {
     id: '1',
-    name: 'Handmadelove',
-    intro: `Handmadelove is an ecommerce website built with Next.js + Typescript.  Users can customize and order various hand-made products listed.`,
-    link: 'https://handmadelovebytanya.com',
-    cover: '/handmadelove.jpeg',
-    techs: [
-      'Next.js',
-      'Typescript',
-      'Tailwind CSS',
-      'Node.js',
-      'Linux',
-      'MongoDB',
-      'Firebase',
-      'Digital Ocean',
-    ],
-  },
-  {
-    id: '2',
     name: 'Popstream',
     intro:
       'Popstream is a social media platform built with React Native + Typescript.  Its unique following system helps you reach more audiences easily.',
@@ -37,20 +20,30 @@ const projects: Project[] = [
     ],
   },
   {
+    id: '2',
+    name: 'Handmadelove',
+    intro: `Handmadelove is an ecommerce website built with Next.js + Typescript.  Users can customize and order various hand-made products listed.`,
+    link: 'https://handmadelovebytanya.com',
+    cover: '/handmadelove.jpeg',
+    techs: [
+      'Next.js',
+      'Typescript',
+      'Tailwind CSS',
+      'Node.js',
+      'Linux',
+      'MongoDB',
+      'Firebase',
+      'Digital Ocean',
+    ],
+  },
+  {
     id: '3',
     name: 'VisiblX',
     intro:
       'VisiblX is a centralized product experience management system where brands, and distributors can manage and share their products details easily.',
     cover: '/visiblx.jpeg',
     link: 'https://visiblx.in',
-    techs: [
-      'React',
-      'Webpack',
-      'Node.js',
-      'Linux',
-      'MongoDB',
-      'Styled components',
-    ],
+    techs: ['React', 'Webpack', 'Node.js', 'Linux', 'MongoDB', 'Styled components'],
   },
   // {
   //   id: '4',

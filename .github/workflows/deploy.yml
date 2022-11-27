@@ -1,15 +1,39 @@
-name: Fly Deploy
+name: 🚀 Fly Deploy
+
 on:
   push:
-    branches: [ "prod" ]
+    branches:
+      - prod
+
 env:
   FLY_API_TOKEN: ${{ secrets.FLY_API_TOKEN }}
+
 jobs:
   deploy:
-      name: Deploy app
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: superfly/flyctl-actions/setup-flyctl@master
-        - run: flyctl regions set maa
-        - run: flyctl deploy --remote-only --no-cache --now
+    name: 🚀 Deploy
+    runs-on: ubuntu-latest
+    # only build/deploy prod branch on pushes
+    # if: ${{ (github.ref == 'refs/heads/prod') && github.event_name == 'push' }}
+
+    steps:
+      - name: 🛑 Cancel Previous Runs
+        uses: styfle/cancel-workflow-action@0.11.0
+
+      - name: 🔑 Check for FLY_API_TOKEN
+        run: |
+          if [ -z "${{ secrets.FLY_API_TOKEN }}" ]; then
+            echo "You must provide a FLY_API_TOKEN secret linked to this project's fly.io account in this repo's secrets. Learn more: https://fly.io/docs/app-guides/continuous-deployment-with-github-actions/"
+            exit 1
+          fi
+
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v3
+
+      - name: ⚙️ Setup flyctl
+        uses: superfly/flyctl-actions/setup-flyctl@master
+
+      - name: ⚙️ Setup Regions
+        uses: fly regions set maa lax
+
+      - name: 🚀 Deploy Production
+        run: flyctl deploy --remote-only --detach --now --auto-confirm
