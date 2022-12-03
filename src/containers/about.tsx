@@ -41,11 +41,6 @@ export default function AboutMe() {
           <span className="text-sm">Oct 2020 - Jan 2021</span>
           <br />
           <br />
-          {/* Systems Engineer @ Tata Consultancy Services
-          <br />
-          2019 - Now
-          <br />
-          <br /> */}
         </p>
 
         <h3 className="text-lg">Skills</h3>

@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import Pill from './pill'
 
-export type Project = {
+export interface Project {
   id: string
   name: string
   intro: any
@@ -12,7 +12,7 @@ export type Project = {
   techs: string[]
 }
 
-type Props = {
+interface Props {
   project: Project
 }
 

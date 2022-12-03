@@ -1,13 +1,5 @@
-import type { ReactNode } from 'react'
+import type { PropsWithChildren } from 'react'
 
-type Props = {
-  children: ReactNode
-}
-
-export default function Pill({ children }: Props) {
-  return (
-    <span className="text-xs bg-gray-100 text-slate-500 px-2 py-1 rounded-md">
-      {children}
-    </span>
-  )
+export default function Pill({ children }: PropsWithChildren) {
+  return <span className="text-xs bg-gray-100 text-slate-500 px-2 py-1 rounded-md">{children}</span>
 }
